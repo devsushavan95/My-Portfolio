@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@theme {
+  --color-brand: #d94100;
+  --color-brand-dark: #d12f24;
+  --color-dark: #181818;
+  --color-body-bg: #232323;
+  --color-heading: #ffffff;
+  --color-body-text: #cbcbcb;
+  --color-border-1: #cccccc;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1600px;
+}
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  @apply bg-body-bg text-body-text leading-[1.5];
+}
+
+.container {
+  @apply mx-auto max-w-[1200px];
+}
+
+section {
+  @apply px-5;
+}
+
+a {
+  @apply transition-all duration-300;
+}
+
+.btn {
+  @apply inline-flex bg-gray-400 border-2 border-gray-400 text-white px-6 py-2 rounded-sm font-medium hover:bg-gray-500 hover:border-gray-500 transition;
+}
+
+.btn-primary {
+  @apply bg-brand border-brand hover:bg-brand-dark hover:border-brand-dark;
+}
