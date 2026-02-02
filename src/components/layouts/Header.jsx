@@ -21,35 +21,35 @@ function Header() {
   }, []);
 
   return (
-    <header className="py-4 z-1040 fixed top-0 left-0 right-0" ref={headerRef}>
+    <header className="py-4 px-5 z-1040 fixed top-0 left-0 right-0" ref={headerRef}>
       <div className="container">
         <div className="grid grid-cols-12 gap-x-6 items-center">
           <div className="col-span-4 max-md:col-span-6">
-            <h1 className="text-2xl font-semibold">Sushavan Chakraborty</h1>
+            <h1 className="text-2xl font-semibold max-lg:text-xl max-md:text-lg max-md:leading-[1.3]">Sushavan Chakraborty</h1>
           </div>
 
           <div className="col-span-8 max-md:col-span-6 flex items-center justify-end gap-x-10">
-            <nav>
+            <nav className="max-lg:hidden">
               <ul className="flex gap-x-6">
                 <li>
-                  <a href="#">Work</a>
+                  <a href="#workSection">Work</a>
                 </li>
 
                 <li>
-                  <a href="#">Experience</a>
+                  <a href="#expSection">Experience</a>
                 </li>
 
                 <li>
-                  <a href="#">Tools</a>
+                  <a href="#toolSection">Tools</a>
                 </li>
               </ul>
             </nav>
 
             <div className="flex gap-x-5 items-center">
-              <a href="tel:8918686237" className="text-white border-b-2 border-brand font-semibold text-2xl">
+              <a href="tel:8918686237" className="text-white border-b-2 border-brand font-semibold text-2xl max-md:hidden">
                 +91 8918686237
               </a>
-              <a href="#" className="btn btn-primary">
+              <a href="mailto:devsushavan95@gmail.com" className="btn btn-primary">
                 Contact Me
               </a>
             </div>

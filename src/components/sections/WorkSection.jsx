@@ -10,65 +10,65 @@ function WorkSection() {
     {
       id: 1,
       title: "Drbooking",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      imageUrl: "/images/dr_booking.jpg",
+      projectUrl: "https://drbooking.in/",
       category: "Custom Development",
     },
     {
       id: 2,
       title: "Sahajayoga",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      imageUrl: "/images/sahajayoga.jpg",
+      projectUrl: "https://sahajayogathai.com/",
       category: "Wordpress",
     },
     {
       id: 3,
       title: "My Tripnavigator",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      imageUrl: "/images/mytripnavigator.jpg",
+      projectUrl: "https://www.mytripnavigator.com/",
       category: "Custom Development",
     },
     {
       id: 4,
       title: "Ayurvardhini",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      imageUrl: "/images/ayurvardhini.jpg",
+      projectUrl: "https://ayurvardhini.com",
       category: "Wordpress",
     },
     {
       id: 5,
-      title: "Vidyanidhi",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      title: "Sri Dev Shastri",
+      imageUrl: "/images/sridevshastri.jpg",
+      projectUrl: "https://sridevshastri.in/",
       category: "Wordpress",
     },
     {
       id: 6,
-      title: "Holzmate",
-      imageUrl: "https://dummyimage.com/400x300/ededed/fff",
-      projectUrl: "#",
+      title: "Needleking Tailors",
+      imageUrl: "/images/needlekingtailors.jpg",
+      projectUrl: "https://needlekingtailors.com/",
       category: "Wordpress",
     },
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 max-md:py-16" id="workSection">
       <div className="container">
         <div className="grid grid-cols-12">
-          <div className="col-span-6 max-md:col-span-12 items-center gap-x-6">
-            <motion.h2 className="text-[4rem] leading-none mb-12 max-md:text-center" initial={initialFadeInState} animate={finalFadeInState} transition={{ duration: 0.3, delay: 0.2 }}>
-              Work <span className="size-4 rounded-full inline-block bg-brand"></span>
+          <div className="col-span-6 items-center gap-x-6">
+            <motion.h2 className="leading-none mb-12" initial={initialFadeInState} animate={finalFadeInState} transition={{ duration: 0.3, delay: 0.2 }}>
+              Work <span className="size-4 rounded-full inline-block bg-brand max-md:size-3"></span>
             </motion.h2>
           </div>
 
-          <div className="col-span-6 max-md:col-span-12 text-right max-md:text-center">
-            <motion.a href="#" className="btn btn-primary" initial={initialFadeInState} animate={finalFadeInState} transition={{ duration: 0.3, delay: 0.2 }}>
+          <div className="col-span-6 text-right">
+            <motion.a href="tel:8918686237" className="btn btn-primary" initial={initialFadeInState} animate={finalFadeInState} transition={{ duration: 0.3, delay: 0.2 }}>
               Hire Me
             </motion.a>
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {workList.map((work, index) => (
             <WorkCard key={work.id} title={work.title} imageUrl={work.imageUrl} projectUrl={work.projectUrl} category={work.category} idx={index} />
           ))}

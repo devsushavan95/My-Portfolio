@@ -26,6 +26,14 @@
   h6 {
     @apply text-heading;
   }
+
+  h2 {
+    @apply text-[4rem] max-xl:text-[3.25rem] max-lg:text-[2.75rem] max-md:text-[2rem];
+  }
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 body {
@@ -43,6 +51,10 @@ section {
 
 a {
   @apply transition-all duration-300;
+}
+
+img {
+  @apply max-w-[100%] h-auto;
 }
 
 .btn {
