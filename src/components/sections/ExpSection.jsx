@@ -13,19 +13,19 @@ function ExpSection() {
       company: "Yourbizpartner",
       role: "Full Stack Web Developer",
       duration: "12-2024 - Present",
-      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, quae.",
+      description: "Working as a Full Stack Web Developer at Yourbizpartner, responsible for developing and maintaining web applications using modern technologies. Collaborating with cross-functional teams to deliver high-quality solutions that meet client requirements.",
     },
     {
       company: "Adbuffs Pvt Ltd.",
       role: "Frontend & Wordpress Developer",
       duration: "04-2024 - 12-2024",
-      description: "Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "Developed and maintained responsive websites using WordPress and frontend technologies. Collaborated with design teams to implement pixel-perfect UIs.",
     },
     {
       company: "TSM",
       role: "Front-end & Wordpress Developer",
       duration: "06-2021 - 03-2024",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Worked as a Front-end and WordPress Developer at TSM, responsible for creating and maintaining responsive websites using WordPress and front-end technologies. Collaborated with design teams to implement pixel-perfect UIs and ensure optimal user experience.",
     },
     // You can add more experience objects here
   ];

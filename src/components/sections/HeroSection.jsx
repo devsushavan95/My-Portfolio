@@ -15,7 +15,7 @@ function HeroSection() {
           </motion.div>
 
           <motion.p className="text-brand text-xl mb-3 max-xl:max-w-170 mx-auto max-md:text-base" initial={initialFadeInState} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.4 }}>
-            A passionate student who loves to build beautiful and FUNCTIONAL WEBSITES and WEB APPLICATIONS
+            A passionate student who loves to build BEAUTIFUL,FUNCTIONAL WEBSITES and WEB APPLICATIONS
           </motion.p>
 
           <motion.h2 className="text-[4rem] leading-[1.2] text-body-text max-w-300 mx-auto max-xl:text-[3.25rem] max-lg:text-[2.5rem] max-md:text-[2rem] max-sm:text-[1.75rem]" initial={initialFadeInState} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.7 }}>
